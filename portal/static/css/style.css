@@ -1,11 +1,50 @@
+:root {
+    --navfooter: #007BFF;
+    --textcolor: rgb(0, 0, 0);
+    --paragrafe-color: #696969;
+    --lupa: black;
+    --background-color: #ffffff;
+    --sol: #ffffff;
+    --lua: #1E1E2F;
+}
+
+.dark-mode:root {
+    --navfooter: #000000;
+    --textcolor: rgb(255, 255, 255);
+    --paragrafe-color: #fafafa;
+    --lupa: rgb(255, 255, 255);
+    --background-color: #1E1E2F;
+    --sol: #1E1E2F;
+    --lua: #ffffff;
+}
+
+.dark-mode .text-muted{
+    color: var(--paragrafe-color) !important;
+}
+
+.sol {
+    color: var(--sol) !important;
+}
+
+.lua {
+    color: var(--lua) !important;
+}
+
 body {
     margin: 0 !important;
     padding: 0 !important;
+    background-color: var(--background-color);
+}
+
+main {
+    color: var(--textcolor) !important;
+    text-align: left !important;
+    padding-bottom: 3.5em !important;
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: #007BFF !important;
+    background-color: var(--navfooter) !important;
 }
 
 .navbar-nav {
@@ -15,21 +54,59 @@ body {
 .navbar-brand {
     font-weight: bold !important;
     font-size: 1.5em !important;
-    color: black !important;
+    color: var(--textcolor) !important;
 }
 
 .nav-link {
-    color: black !important;
+    color: var(--textcolor) !important;
     font-size: 1.3em !important;
     letter-spacing: 2px !important;
     margin-right: auto !important;
 }
 
+.pstext {
+    color: black !important;
+}
+
+.card {
+    margin-left: 10% !important;
+    padding: 0.8em !important;
+    margin-top: 2em !important;
+    border: none !important;
+    border-left: solid 2px var(--textcolor)!important;
+    border-bottom: solid 2px var(--textcolor) !important;
+    width: 70% !important;
+    /* ou 600px, por exemplo */
+    height: auto !important;
+    /* ou defina uma altura fixa como 300px */
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.imgcard {
+    margin-right: 40% !important;
+}
+
+.cardtext {
+    padding-top: 4em !important;
+    text-align: center !important;
+}
+
+.card-title {
+    font-size: x-large !important;
+    color: var(--textcolor) !important;
+}
+
+.card-text {
+    color: var(--paragrafe-color) !important;
+}
+
+
 /* Footer */
 footer {
     width: auto !important;
-    background-color: #007BFF !important;
-    color: rgb(0, 0, 0) !important;
+    background-color: var(--navfooter) !important;
+    color: var(--textcolor) !important;
     text-align: center !important;
     display: flex !important;
     align-items: center !important;
@@ -37,6 +114,13 @@ footer {
     padding-top: 0.5em !important;
 }
 
-.fa{
-    color: white !important;
+.fa {
+    color: var(--lupa) !important;
+}
+
+/* pagina noticia */
+
+.noticia{
+    text-align: center !important;
+    padding: 4em !important;
 }
