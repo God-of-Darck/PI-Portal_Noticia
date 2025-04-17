@@ -28,3 +28,14 @@ $checkbox.addEventListener('change', function () {
 document.getElementById("search-btn").addEventListener("click", function(){
     document.getElementById("search-form").onsubmit();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    const searchContainer = document.getElementById("search-container");
+
+    // Oculta a barra de pesquisa somente na rota de uma notícia individual
+    if (currentPath.startsWith("/noticia/") && searchContainer) {
+        searchContainer.style.display = "none";
+    }
+});

@@ -28,14 +28,22 @@
                         <a class="nav-link" href="javascript:void(0)">Sobre nós</a>
                     </li>
                 </ul>
-                <form  class="d-flex ms-auto" method="get" id="search-form">
-                    <div class="input-group">
-                        <input class="form-control me-2 pstext" type="text" placeholder="Pesquisar" name="search" value="{{request.GET.search}}">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" id="search-btn" type="submit"><i class="fa fa-search"></i></button>
+
+
+                <form class="d-flex ms-auto" method="get" id="search-form">
+                    <div id="search-container">
+                        <div class="input-group">
+                            <input class="form-control me-2 pstext" type="text" placeholder="Pesquisar" name="search"
+                                value="{{request.GET.search}}">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" id="search-btn" type="submit"><i
+                                        class="fa fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
                 </form>
+
+
                 <li class="nav-item align-items-center d-flex">
                     <i class="fas fa-sun sol"></i>
                     <!-- Default switch -->
