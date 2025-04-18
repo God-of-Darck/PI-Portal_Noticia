@@ -22,10 +22,13 @@
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Noticias</a>
+                        <a class="nav-link" href="{% url 'noticias' %}">Notícias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Sobre nós</a>
+                        <a class="nav-link" href="{% url 'sobreno-views' %}">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'politica-views' %}">Políticas</a>
                     </li>
                 </ul>
 
@@ -60,7 +63,13 @@
         {% endblock %}
     </main>
     <footer class="fixed-bottom">
-        <p>&copy; 2025 Tecnet. Todos os direitos reservados</p>
+        <p class="footer-text">
+            © 2025 Tecnet. Todos os direitos reservados
+            <span class="social-icons">
+              <img src="{% static '/img/youtube.png' %}" alt="YouTube" width="30px" height="30px">
+              <img src="{% static '/img/instagram.png' %}" alt="Instagram"width="30px" height="30px">
+            </span>
+          </p>
     </footer>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

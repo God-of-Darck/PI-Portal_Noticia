@@ -14,8 +14,13 @@ def TodasNoticias(request):
     else:
         return render(request, 'portal/noticias.html', {'Noticias_Todas': Noticias_Todas})
 
-
 def noticia(request, id):
     print("ID recebido:", id)
     noticia = get_object_or_404(Noticias, pk=id)
     return render(request, 'portal/noticia.html', {'noticia': noticia})
+
+def politicas(request):
+    return render(request, 'portal/politicas.html')
+
+def sobrenos(request):
+    return render(request, 'portal/sobrenos.html')

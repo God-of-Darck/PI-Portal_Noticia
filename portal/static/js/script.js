@@ -31,11 +31,16 @@ document.getElementById("search-btn").addEventListener("click", function(){
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const currentPath = window.location.pathname;
+    const path = window.location.pathname;
     const searchContainer = document.getElementById("search-container");
 
-    // Oculta a barra de pesquisa somente na rota de uma notícia individual
-    if (currentPath.startsWith("/noticia/") && searchContainer) {
-        searchContainer.style.display = "none";
+    if (
+        path.startsWith('/noticia/') ||
+        path.startsWith('/sobrenos') ||
+        path.startsWith("/politicas")
+    ) {
+        if (searchContainer) {
+            searchContainer.style.display = "none";
+        }
     }
 });

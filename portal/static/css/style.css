@@ -1,5 +1,5 @@
 :root {
-    --navfooter: #007BFF;
+    --navfooter: hsl(192, 78%, 61%);
     --textcolor: rgb(0, 0, 0);
     --paragrafe-color: #696969;
     --lupa: black;
@@ -150,3 +150,5 @@ footer {
     margin-left: 20% !important;
     margin-right: 20% !important;
 }
+
+
