@@ -1,0 +1,189 @@
+@import url(color.css);
+
+h4 {
+    color: var(--textcolor) !important;
+}
+
+.dark-mode .text-muted {
+    color: var(--paragrafe-color) !important;
+}
+
+.sol {
+    color: var(--sol) !important;
+}
+
+.lua {
+    color: var(--lua) !important;
+}
+
+/* Estilo básico da página */
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte */
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--background-color);
+}
+
+h2 {
+    text-align: center !important;
+}
+
+main {
+    color: var(--textcolor) !important;
+    text-align: left !important;
+    padding-bottom: 3.5em !important;
+}
+
+.navbar {
+    background-color: var(--navfooter) !important;
+}
+
+.navbar-nav {
+    left: auto !important;
+}
+
+.navbar-brand {
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+    color: var(--textcolor) !important;
+}
+
+.nav-link {
+    color: var(--textcolor) !important;
+    font-size: 1.3em !important;
+    letter-spacing: 2px !important;
+    margin-right: auto !important;
+}
+
+#search-btn{
+    background-color: none !important;
+    background: none !important;
+}
+
+.btn i{
+    background: none !important;
+    font-size: medium !important;
+}
+
+/*------------------------rodapé inicio-------------------------------*/
+.footer {
+    background-color: #0e151b;
+    color: #fff;
+    padding: 2rem 1rem;
+    /* Espaçamento interno (topo/baixo*/
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Estiliza os links dentro do rodapé */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    margin: 0 10px;
+    /* Espaço entre os links */
+    font-weight: bold;
+    /* Deixa o texto dos links em negrito */
+}
+
+/* Efeito hover nos links do rodapé */
+.footer a:hover {
+    color: #00ff99;
+    /* Cor verde clara ao passar o mouse */
+}
+
+/* Container dos links "Sobre Nós", "Termos de Uso..." */
+.footer-links {
+    font-size: 1rem !important;
+    margin-bottom: 1rem;
+    /* Espaço abaixo para separar dos ícones sociais */
+}
+
+/* Estiliza os ícones sociais (Facebook, Twitter...) */
+.footer-social a {
+    color: #fff;
+    font-size: 1.2rem;
+    /* Tamanho dos ícones */
+    margin: 0 10px;
+    /* Espaçamento horizontal entre os ícones */
+    display: inline-block;
+    /* Garante que fiquem lado a lado */
+}
+
+/* Efeito hover nos ícones sociais */
+.footer-social a:hover {
+    color: #00ff99;
+}
+
+/* Texto © 2025 Tecnet. Todos os direitos reservados. */
+.footer-copy {
+    margin-top: 1rem;
+    /* Espaço acima do texto final */
+    font-size: 0.8rem !important;
+    /* Tamanho um pouco menor */
+    color: #ccc;
+    /* Cinza claro para suavizar a aparência */
+}
+
+/*---------------------------rodapé final----------------------------*/
+
+
+@media (min-width: 200px) and (max-width: 768px) {
+
+    .footer-social {
+        text-align: center;
+        /* Alinha os ícones ao centro */
+        margin-top: 10px;
+    }
+}
+
+.main-headline-container {
+    flex-direction: column !important;
+    /* empilha verticalmente */
+}
+
+.main-headline {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    /* espaço entre principal e laterais */
+}
+
+.side-headlines {
+    flex-direction: column !important;
+    /* empilha as laterais também */
+    width: 100% !important;
+}
+
+.side-headline {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+}
+
+.side-headline:last-child {
+    margin-bottom: 0 !important;
+}
+
+.headline-title {
+    font-size: 1.2rem !important;
+}
+
+.headline-summary {
+    font-size: 0.95rem !important;
+}
+
+.headline-title {
+    font-size: 1.3rem !important;
+}
+
+.headline-summary {
+    font-size: 1rem !important;
+}
+
+.footer-links {
+    font-size: 0.8rem;
+}
+
+.footer-copy {
+    font-size: 0.5rem;
+}

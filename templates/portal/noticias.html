@@ -1,74 +1,91 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} Noticias {% endblock%}
+{% block style %} <link rel="stylesheet" href="{% static '/css/noticias.css' %}"> {% endblock %}
 {% block content %}
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+<!-- --------------------Container principal------------------------->
+<section>
+    <div class="news-container">
+        <!-- Card 1 (Imagem grande) -->
+        <div class="news-card card-- card-1">
+            <img src="{% static '/img/peixe.webp' %}" alt="Notícia 1" />
+            <div class="card-content">
+                <span class="category">Medicina e Saúde</span>
+                <h2>Papa Francisco morre aos 88 anos; entenda o quadro de saúde que se agravou</h2>
+            </div>
+        </div>
+
+        <!-- Card 2 (Imagem média) -->
+        <div class="card-- card2">
+            <img src="{% static '/img/peixe.webp' %}" alt="Notícia 2" />
+            <div class="card-content">
+                <span class="category">Ciência e Espaço</span>
+                <h2>Qual é a cidade mais alta do mundo?</h2>
+            </div>
+        </div>
+
+        <!-- Card 3 (Imagem pequena) -->
+        <div class="card-- card3">
+            <img src="{% static '/img/peixe.webp' %}" alt="Notícia 3" />
+            <div class="card-content">
+                <span class="category">Web Story</span>
+                <h2>Saiba como pausar seu WhatsApp</h2>
+            </div>
+        </div>
+
+        <!-- Card 4 (Imagem pequena) -->
+        <div class="card-- card4">
+            <img src="{% static '/img/peixe.webp' %}" alt="Notícia 4" />
+            <div class="card-content">
+                <span class="category">Internet e Redes Sociais</span>
+                <h2>Jogos de hoje (21/04/25): onde assistir futebol ao vivo e horários das partidas</h2>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{%static '/img/img1.png'%}" alt="Los Angeles" class="d-block" style="width:100%;">
-            <div class="carousel-caption">
-                <h3>Inteligência Artificial: aliada ou ameaça?</h3>
-                <p>A inteligência artificial (IA) deixou de ser apenas um conceito futurista e passou a fazer parte do
-                    nosso cotidiano...</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="{%static '/img/img1.png'%}" alt="Chicago" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-                <h3>Inteligência Artificial: aliada ou ameaça?</h3>
-                <p>A inteligência artificial (IA) deixou de ser apenas um conceito futurista e passou a fazer parte do
-                    nosso cotidiano...</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="{%static '/img/img1.png'%}" alt="New York" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-                <h3>Inteligência Artificial: aliada ou ameaça?</h3>
-                <p>A inteligência artificial (IA) deixou de ser apenas um conceito futurista e passou a fazer parte do
-                    nosso cotidiano...</p>
-            </div>
-        </div>
-    </div>
+<!---------------------Segundo container------------------------>
 
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+
+
+<h2>Inovação das IA</h2>
+<section class="carousel">
+    <button class="arrow left" onclick="scrollCards('carousel1', -1)">
+        &#10094;
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
-
-{% for noticia in Noticias_Todas %}
-<div class="card mb-3 mt-4">
-    <div class="row g-0">
-        <div class="col-md-4">
-            <img src="{{ noticia.imagem.url }}" class="img-fluid rounded-start imgcard" alt="Imagem da notícia" style="width: 250px; height: 250px;">
-        </div>
-        <div class="col-md-8">
+    <div class="cards-wrapper" id="carousel1">
+        {% for noticia in Noticias_Todas %}
+        <div class="card">
+            <img src="{{ noticia.imagem.url }}" alt="Palmas" />
             <div class="card-body">
-                <h5 class="card-title">
-                 <a class="link" href="{% url 'noticia-views' noticia.id %}" style="text-decoration: none; color: inherit;">
-                        {{ noticia.titulo }}
-                    </a>
-                </h5>
-                <p class="card-text">{{ noticia.descricao }}</p>
-                <br>
-                <p class="cardtext"><small class="text-muted">Publicado em {{ noticia.created_at|date:"d/m/Y H:i" }}</small></p>
+                <strong><h4>{{ noticia.titulo }}</h4></strong>
+                <p>{{ noticia.descricao|truncatechars:50 }}</p>
+                <a href="{% url 'noticia-views' noticia.id %}" class="btn">Ler mais</a>
             </div>
         </div>
+        {% endfor %}
     </div>
-</div>
-{% endfor %}
+    <button class="arrow right" onclick="scrollCards('carousel1', +1)">
+        &#10095;
+    </button>
+</section>
 
+
+<h2>IAs</h2>
+<div class="cards-horizontal-container">
+    <!-- Card -->
+    {% for noticia in Noticias_Todas %}
+    <div class="horizontal-card">
+        <img src="{{ noticia.imagem.url }}" alt="Imagem 1" />
+        <div class="horizontal-card-body">
+            <h4> {{ noticia.titulo }}</h4>
+            <p>
+                {{ noticia.descricao|truncatechars:50 }}
+            </p>
+            <a href="{% url 'noticia-views' noticia.id %}" class="btn1">Ler mais</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

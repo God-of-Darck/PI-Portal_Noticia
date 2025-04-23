@@ -1,0 +1,25 @@
+:root {
+    --navfooter: hsl(216, 99%, 46%);
+    --textcolor: rgb(0, 0, 0);
+    --paragrafe-color: #696969;
+    --lupa: black;
+    --background-color: #ffffff;
+    --sol: #ffffff;
+    --lua: #1E1E2F;
+    --borders-color:#c4c4c4 ;
+    --shadow: rgba(0, 0, 0, 0.2)  ;
+    --back-btn: rgb(0,255,255);
+}
+
+.dark-mode:root {
+    --navfooter: #000000;
+    --textcolor: rgb(255, 255, 255);
+    --paragrafe-color: #fafafa;
+    --lupa: rgb(255, 255, 255);
+    --background-color: #1E1E2F;
+    --sol: #1E1E2F;
+    --lua: #ffffff;
+    --borders-color:#fafafa;
+    --shadow: rgba(255, 255, 255, 0.452)  ;
+    --back-btn: rgb(47, 68, 68);
+}

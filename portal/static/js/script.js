@@ -44,3 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+/* Função para rolar os cards dentro do carrossel */
+function scrollCards(id, direction) {
+    const wrapper = document.getElementById(id);
+    const scrollAmount = wrapper.offsetWidth / 2;
+    wrapper.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+/* Função para rolar os cards dentro do carrossel */
+function scrollCards(wrapperId, direction) {
+    const wrapper = document.getElementById(wrapperId); /* Seleciona o contêiner dos cards */
+    const scrollAmount = 320; /* Quantidade de pixels a ser rolada por vez (ajustável) */
+    
+    /* Rola os cards para a esquerda ou direita */
+    wrapper.scrollBy({
+      left: direction * scrollAmount, /* Rola para a direção escolhida (esquerda ou direita) */
+      behavior: 'smooth' /* Aplica animação suave */
+    });
+  }
