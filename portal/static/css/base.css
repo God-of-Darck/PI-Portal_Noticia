@@ -1,9 +1,5 @@
 @import url(color.css);
 
-h4 {
-    color: var(--textcolor) !important;
-}
-
 .dark-mode .text-muted {
     color: var(--paragrafe-color) !important;
 }
@@ -27,6 +23,10 @@ body {
 
 h2 {
     text-align: center !important;
+}
+
+.titleSection{
+    color: var(--textcolor) !important;
 }
 
 main {

@@ -1,0 +1,42 @@
+@import url(color.css);
+@import url(base.css);
+
+.card {
+    margin-left: 15.5% !important;
+    padding: 0.8em !important;
+    margin-top: 2em !important;
+    border: solid 2px var( --borders-color) !important;
+    width: 70% !important;
+    height: auto !important;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: -8px 8px 8px var(--shadow) !important;
+    margin-bottom: 1em !important;
+}
+
+.imgcard {
+    margin-right: 40% !important;
+    margin-left: 10% !important;
+    margin-top: 0.5em !important;
+    border-radius: 16px !important;
+}
+
+.cardtext {
+    padding-top: 2.8em !important;
+    text-align: center !important;
+}
+
+.card-title {
+    text-align: left !important;
+    /*aqui*/
+    font-size: x-large !important;
+    color: var(--textcolor) !important;
+}
+
+.card-text {
+    text-align: left !important;
+    color: var(--paragrafe-color) !important;
+}
+
+main{
+    padding-bottom: 16em !important;
+}

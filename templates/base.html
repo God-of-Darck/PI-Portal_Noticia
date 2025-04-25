@@ -25,15 +25,18 @@
                         <a class="nav-link" href="{% url 'noticias' %}">Notícias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">IA</a>
+                        <a class="nav-link" href="{% url 'ia-views'%}">IA</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">T.I</a>
+                        <a class="nav-link" href="{% url 'ti-views'%}">T.I</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">Games-Jogos</a>
+                        <a class="nav-link" href="{% url 'games-views'%}">Games-Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'robotk-views'%}">Robotica</a>
                     </li>
                 </ul>
 
@@ -69,7 +72,7 @@
     </main>
 
     <!---------------------------------rodapé-------------------------->
-    <footer class="footer fixed-bottom">
+    <footer class="footer">
         <div class="container">
             <div class="footer-links">
                 <a href="{% url 'sobreno-views' %}">Sobre Nós</a>

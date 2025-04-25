@@ -2,6 +2,12 @@
 @import url(color.css);
 
 /*-----------------Principal--------------------*/
+
+a{
+    text-decoration: none !important;
+    color: var(--textcolor);
+}
+
 .news-container {
     display: grid;
     grid-template-columns: 2fr 0.8fr 0.5fr !important;
@@ -16,10 +22,11 @@
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    color: var(--textcolor);
-    /*cor do texto*/
 }
 
+h2{
+    color: white !important;
+}
 
 .card-content {
     position: absolute !important;
@@ -61,6 +68,12 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
+/* Imagem dos cardes */
+.imgnewnoticias{
+    width: 100% !important;
+    height: 100% !important;
+}
+
 
 @media (max-width: 768px) {
     .news-container {
@@ -104,7 +117,17 @@
     }
 }
 
-/*------------------------------carrosséis --------------------------*/
+/*------------------------------carrosséis com setas--------------------------*/
+
+/* Novo contêiner centralizador para o carrossel */
+.carousel-container {
+    max-width: 900px;
+    /* Ajuste conforme necessário */
+    margin: 0 auto 40px auto;
+    position: relative;
+    /* Necessário para as setas ficarem dentro */
+}
+
 .carousel {
     position: relative;
     /*posicionar os botões corretamente */
@@ -169,11 +192,12 @@
     color: black !important;
 }
 
-.card-body h4{
+.card-body h4 {
     font-size: medium !important;
     font-weight: bold !important;
 }
-.card-body p{
+
+.card-body p {
     font-size: small !important;
 }
 
@@ -206,9 +230,9 @@
     /* Ajusta o posicionamento para centralizar */
     background: none !important;
     /* Cor de fundo*/
-    border: none;
+    border: none !important;
     /* Remove a borda */
-    color: rgb(9, 9, 9);
+    color: var(--lupa);
     /* Cor da seta */
     padding: 5px;
     /* Espaçamento do botão */
@@ -220,13 +244,13 @@
 
 /* Estilo para o botão da esquerda */
 .arrow.left {
-    left: 10px;
+    left: -5em !important;
     /* Posiciona o botão à esquerda */
 }
 
 /* Estilo para o botão da direita */
 .arrow.right {
-    right: 10px;
+    right: -5em !important;
     /* Posiciona o botão à direita */
 }
 
@@ -278,10 +302,14 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .horizontal-card-body h4 {
     font-size: 16px !important;
     margin-bottom: 8px !important;
-    color: var(--textcolor) !important;
+}
+
+.texth4{
+    color: black !important;
 }
 
 .horizontal-card p {
@@ -306,7 +334,8 @@
     margin: 15px auto 0;
     display: block;
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 

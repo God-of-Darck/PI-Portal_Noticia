@@ -1,6 +1,7 @@
 :root {
     --navfooter: hsl(216, 99%, 46%);
     --textcolor: rgb(0, 0, 0);
+    --textcolorNews: rgb(255, 255, 255);
     --paragrafe-color: #696969;
     --lupa: black;
     --background-color: #ffffff;
@@ -14,7 +15,8 @@
 .dark-mode:root {
     --navfooter: #000000;
     --textcolor: rgb(255, 255, 255);
-    --paragrafe-color: #fafafa;
+    --textcolorNews: rgb(0, 0, 0);
+    --paragrafe-color: #c5c5c5;
     --lupa: rgb(255, 255, 255);
     --background-color: #1E1E2F;
     --sol: #1E1E2F;

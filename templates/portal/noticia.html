@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}{{Notícia.titul}}{% endblock %}
-
+{% block style %} <link rel="stylesheet" href="{% static '/css/noticia.css' %}"> {% endblock %}
 {% block content %}
 
 
@@ -18,7 +18,7 @@
     <br>
     <br>
 
-    <div class="text-justified">{{ noticia.noticia|linebreaks }}</div>
+    <div class="text-justified notociap">{{ noticia.noticia|linebreaks }}</div>
 
 </div>
 

@@ -5,9 +5,10 @@ from django.db import models
 class Noticias(models.Model):
 
     NOTICIAS = (
-        ("politica","Politica"),
-        ("esportes","Esportes"),
-        ("tecnologia","Tecnologia")
+        ("ia","IA"),
+        ("ti","TI"),
+        ("games-jogos","Games-jogos"),
+        ("robotica","Robotica")
     )
   
     titulo = models.CharField(max_length=255)
@@ -15,7 +16,7 @@ class Noticias(models.Model):
     imagem = models.ImageField(upload_to='uploads_img/', null=False, blank=False)  # Campo de imagem
     noticia = models.TextField()  # Conteúdo completo da notícia
     noticias = models.CharField(
-        max_length= 10,
+        max_length= 11,
         choices = NOTICIAS,
     )
     created_at = models.DateTimeField(auto_now_add=True)

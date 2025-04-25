@@ -1,0 +1,27 @@
+@import url(color.css);
+@import url(base.css);
+
+.noticia {
+    text-align: center !important;
+    padding: 4em !important;
+
+}
+
+.h1 {
+    text-align: center !important;
+    padding: 1em !important;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+
+}
+
+.notociap, text-justified {
+    text-align: center !important;
+    padding: 1em !important;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+}
+
+main{
+    padding-bottom: 14em !important;
+}

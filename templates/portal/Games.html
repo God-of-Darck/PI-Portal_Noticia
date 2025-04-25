@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  {% endblock%}
+{% block style %} <link rel="stylesheet" href="{% static '/css/pesquisa.css' %}"> {% endblock %}
+{% block content %}
+{% for noticia in game %}
+<div class="card mb-3 mt-4">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{ noticia.imagem.url }}" class="img-fluid rounded-start imgcard" alt="Imagem da notícia" style="width: 300px; height: 250px;">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">
+                 <a class="link" href="{% url 'noticia-views' noticia.id %}" style="text-decoration: none; color: inherit;">
+                        {{ noticia.titulo }}
+                    </a>
+                </h5>
+                <p class="card-text">{{ noticia.descricao }}</p>
+                <br>
+                <p class="card-text">
+                    <small class="text-muted">Publicado em {{ noticia.created_at|date:"d/m/Y H:i" }}</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% empty %}
+<p class="text-center mt-5">Nenhuma notícia encontrada.</p>
+
+{% endfor %}
+
+{% endblock %}
