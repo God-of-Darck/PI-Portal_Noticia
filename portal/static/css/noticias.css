@@ -147,8 +147,7 @@ h2{
 
 /* Estilo do corpo do card (onde o texto e botão ficam) */
 .card-body {
-    padding: 15px;
-    /* Espaçamento interno do corpo do card */
+    padding: 15px !important; /* Espaçamento interno do corpo do card */
     color: black !important;
 }
 
@@ -294,12 +293,12 @@ h2{
     background-color: rgba(0, 0, 0, 0);
 }
 
-@media (min-width: 250px) and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1024px) {
     .news-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      padding: 10px;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 15px !important;
+      padding: 10px !important;
     }
   
     .card-1,
@@ -310,17 +309,26 @@ h2{
       grid-column: auto !important;
       grid-row: auto !important;
     }
+    .card-body h4 {
+        font-size: 1.2em !important;
+    }
+    .card-body p {
+        font-size: 0.9em !important;
+    }
+    .card-body {
+        padding: 0% !important;
+    }
   
     .card-content {
-      padding: 10px;
+      padding: 10px !important;
     }
   
     .card-content h2 {
-      font-size: 16px;
+      font-size: 16px !important;
     }
   
     .category {
-      font-size: 12px;
+      font-size: 12px !important;
     }
   
     .card img,
@@ -331,18 +339,18 @@ h2{
     }
   
     .arrow {
-      padding: 8px;
-      font-size: 1.5rem;
+      padding: 8px !important;
+      font-size: 1.5rem !important;
     }
   
     .horizontal-card {
-      flex-direction: column;
+      flex-direction: column !important;
       width: 100% !important;
     }
   
     .horizontal-card img {
-      width: 100%;
-      height: auto;
+      width: 100% !important;
+      height: auto !important;
     }
   
     .cards-horizontal-container {
@@ -350,4 +358,6 @@ h2{
       padding-left: 1em !important;
       padding-right: 1em !important;
     }
+
+    
 }

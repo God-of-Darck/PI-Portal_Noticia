@@ -30,15 +30,40 @@ document.getElementById("search-btn").addEventListener("click", function(){
 });
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const path = window.location.pathname;
+//     const searchContainer = document.getElementById("search-container");
+
+//     if (
+//         path.startsWith('/noticia/') ||
+//         path.startsWith('/sobrenos') ||
+//         path.startsWith("/politicas") ||
+//         path.startsWith("/ia") ||
+//         path.startsWith("/ti") ||
+//         path.startsWith("/games") ||
+//         path.startsWith("/robotica") 
+//     ) {
+//         if (searchContainer) {
+//             searchContainer.style.display = "none";
+//         }
+//     }
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
     const path = window.location.pathname;
     const searchContainer = document.getElementById("search-container");
 
-    if (
-        path.startsWith('/noticia/') ||
-        path.startsWith('/sobrenos') ||
-        path.startsWith("/politicas")
-    ) {
+    const pathsToHideSearch = [
+        "/noticia/",
+        "/sobrenos",
+        "/politicas",
+        "/ia",
+        "/ti",
+        "/games",
+        "/robotica"
+    ];
+
+    if (pathsToHideSearch.some(p => path.startsWith(p))) {
         if (searchContainer) {
             searchContainer.style.display = "none";
         }

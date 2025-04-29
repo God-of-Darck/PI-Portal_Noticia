@@ -11,7 +11,7 @@
     <p class="notociap">{{ noticia.descricao }}</p> <!-- Exibe a descrição da notícia -->
 
     {% if noticia.imagem %}
-    <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" style="width: 58%; height: 450px;" />
+    <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" style="width: 58%; height: 450px;"  class="img-noticia"/>
     {% else %}
     <p>Imagem não disponível</p>
     {% endif %}

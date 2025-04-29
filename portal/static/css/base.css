@@ -14,10 +14,11 @@
 
 /* Estilo básico da página */
 body {
-    font-family: Arial, sans-serif;
-    /* Define a fonte */
+    font-family: Arial, sans-serif; /* Define a fonte */
     margin: 0 !important;
     padding: 0 !important;
+    left: 0 !important;
+    left: 0 !important;
     background-color: var(--background-color);
 }
 
@@ -65,23 +66,34 @@ main {
 }
 
 #search-btn{
-    background-color: none !important;
-    background: none !important;
+    background-color: white !important;
+    border: none !important;
+    padding-top: 0.7em !important;
+    border-radius: 0 5px 5px 0;
+    padding-left: 2em !important;
+    
 }
 
-.btn i{
-    background: none !important;
+.btn-search i{
+    background-color: white !important;
     font-size: medium !important;
+    width: 1em !important;
+    height: 1.7em !important;
+    
+}
+
+.form-control{
+    border: none !important;
 }
 
 /*------------------------rodapé inicio-------------------------------*/
 .footer {
     background-color: #0e151b;
     color: #fff;
-    padding: 2rem 1rem;
-    /* Espaçamento interno (topo/baixo*/
-    text-align: center;
-    /* Centraliza o texto */
+    padding: 2rem 1rem;/* Espaçamento interno (topo/baixo*/
+    text-align: center;/* Centraliza o texto */
+    left: 0 !important;
+    right: 0 !important;
 }
 
 /* Estiliza os links dentro do rodapé */
@@ -137,45 +149,48 @@ main {
 /*---------------------------rodapé final----------------------------*/
 
 /* ================= RESPONSIVIDADE ================= */
-@media (min-width: 250px) and (max-width: 800px) {
-    .navbar-nav {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        padding-left: 1rem !important;
-    }
-
+@media (min-width: 200px) and (max-width: 1024px) {
     .nav-link {
         margin: 0.5rem 0 !important;
-        font-size: 1.1em !important;
+        font-size: 1.9em !important;
     }
-
-    .form-check.form-switch {
-        margin-top: 1rem !important;
-    }
-
-    form.d-flex {
-        width: 100% !important;
-        margin-top: 1rem !important;
-        padding: 0 1rem;
+    .container-fluid {
+        font-size: 0.5em !important;
+        padding: 0 !important;
+        margin-left: 1em !important;
     }
 
     .input-group {
-        width: 100% !important;
+        width: 60% !important;
+    }
+    .form-control{
+        border: none !important;
+    }
+
+    #search-btn{
+        padding-top: 1em !important;
+    }
+
+    .btn-search i{
+        background-color: white !important;
+        font-size: medium !important;
+        width: 1em !important;
+        height: 1.9em !important;
+        
     }
 
     .navbar-toggler {
         margin-left: auto !important;
         border-color: var(--textcolor);
     }
-
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
     .footer-links,
     .footer-social {
-        flex-direction: column;
-        gap: 0.5rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 

@@ -25,3 +25,34 @@
 main{
     padding-bottom: 14em !important;
 }
+
+@media (min-width: 200px) and (max-width: 1024px)  {
+    .noticia {
+        padding: 2em !important;
+    }
+
+    .h1 {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        padding: 0.8em !important;
+        font-size: 1.5em !important;
+    }
+
+    .img-noticia{
+        width: 59% !important;
+        height: 125px !important;
+
+    }
+
+    .noticiap, .text-justified {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        padding: 0.8em !important;
+        font-size: 1em !important;
+        text-align: justify !important;
+    }
+
+    main {
+        padding-bottom: 8em !important;
+    }
+}

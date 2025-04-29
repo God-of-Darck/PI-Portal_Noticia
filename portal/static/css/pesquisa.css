@@ -40,3 +40,39 @@
 main{
     padding-bottom: 16em !important;
 }
+
+/* ========== RESPONSIVIDADE ========== */
+@media (min-width: 200px) and (max-width: 1024px)  {
+    .card {
+        margin-left: 5% !important;
+        width: 90% !important;
+        padding: 1em !important;
+        margin-top: 1.5em !important;
+    }
+
+    .imgcard {
+        margin: 0 auto 1em auto !important;
+        display: block;
+        width: 80% !important;
+        height: auto;
+    }
+
+    .cardtext {
+        padding-top: 1.5em !important;
+        text-align: center !important;
+    }
+
+    .card-title {
+        font-size: 1.3em !important;
+        text-align: center !important;
+    }
+
+    .card-text {
+        text-align: center !important;
+        font-size: 1em !important;
+    }
+
+    main {
+        padding-bottom: 10em !important;
+    }
+}
