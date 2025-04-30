@@ -1,196 +1,183 @@
-@import url(color.css);
+@import url(color.css); /* Importa variáveis de cores de outro arquivo */
 
+/* Define cores para elementos em modo escuro e temas personalizados */
 .dark-mode .text-muted {
-    color: var(--paragrafe-color) !important;
+    color: var(--paragrafe-color) !important; /* Cor de parágrafo no modo escuro */
 }
 
 .sol {
-    color: var(--sol) !important;
+    color: var(--sol) !important; /* Cor para tema 'sol' */
 }
 
 .lua {
-    color: var(--lua) !important;
+    color: var(--lua) !important; /* Cor para tema 'lua' */
 }
 
 /* Estilo básico da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte */
-    margin: 0 !important;
-    padding: 0 !important;
-    left: 0 !important;
-    left: 0 !important;
-    background-color: var(--background-color);
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    margin: 0 !important; /* Remove margens */
+    padding: 0 !important; /* Remove preenchimento */
+    left: 0 !important; /* Posicionamento à esquerda (redundante) */
+    left: 0 !important; /* Linha duplicada (pode ser removida) */
+    background-color: var(--background-color); /* Cor de fundo da página */
 }
 
 h2 {
-    text-align: center !important;
+    text-align: center !important; /* Centraliza os títulos h2 */
 }
 
 .titleSection{
-    color: var(--textcolor) !important;
-    border-bottom: 1px solid  var(--lua) !important;
-    margin-bottom: 1em !important;
-    margin-top: 1em !important;
-
+    color: var(--textcolor) !important; /* Cor do texto */
+    border-bottom: 1px solid  var(--lua) !important; /* Linha inferior com cor tema lua */
+    margin-bottom: 1em !important; /* Espaço abaixo */
+    margin-top: 1em !important; /* Espaço acima */
 }
 
 main {
-    color: var(--textcolor) !important;
-    text-align: left !important;
-    padding-bottom: 10em !important;
+    color: var(--textcolor) !important; /* Cor do texto principal */
+    text-align: left !important; /* Alinhamento à esquerda */
+    padding-bottom: 10em !important; /* Espaço inferior */
 }
 
 .navbar {
-    background-color: var(--navfooter) !important;
+    background-color: var(--navfooter) !important; /* Cor de fundo da navbar */
 }
 
 .navbar-nav {
-    left: auto !important;
+    left: auto !important; /* Posicionamento automático à esquerda */
 }
 
 .navbar-brand {
-    font-weight: bold !important;
-    font-size: 1.5em !important;
-    color: var(--textcolor) !important;
+    font-weight: bold !important; /* Texto em negrito */
+    font-size: 1.5em !important; /* Tamanho maior do texto */
+    color: var(--textcolor) !important; /* Cor do texto */
 }
 
 .nav-link {
-    color: var(--textcolor) !important;
-    font-size: 1.3em !important;
-    letter-spacing: 2px !important;
-    margin-right: auto !important;
+    color: var(--textcolor) !important; /* Cor dos links */
+    font-size: 1.3em !important; /* Tamanho da fonte */
+    letter-spacing: 2px !important; /* Espaçamento entre letras */
+    margin-right: auto !important; /* Margem automática à direita */
 }
 
 .nav-link:hover{
-    background-color: #7cb2e2 !important;
+    background-color: #7cb2e2 !important; /* Cor de fundo ao passar o mouse */
 }
 
 #search-btn{
-    background-color: white !important;
-    border: none !important;
-    padding-top: 0.7em !important;
-    border-radius: 0 5px 5px 0;
-    padding-left: 2em !important;
-    
+    background-color: white !important; /* Cor de fundo branca */
+    border: none !important; /* Sem borda */
+    padding-top: 0.7em !important; /* Espaço superior interno */
+    border-radius: 0 5px 5px 0; /* Cantos arredondados à direita */
+    padding-left: 2em !important; /* Espaço interno à esquerda */
 }
 
 .btn-search i{
-    background-color: white !important;
-    font-size: medium !important;
-    width: 1em !important;
-    height: 1.7em !important;
-    
+    background-color: white !important; /* Fundo branco do ícone */
+    font-size: medium !important; /* Tamanho médio da fonte */
+    width: 1em !important; /* Largura do ícone */
+    height: 1.7em !important; /* Altura do ícone */
 }
 
 .form-control{
-    border: none !important;
+    border: none !important; /* Remove borda do campo de formulário */
 }
+
 
 /*------------------------rodapé inicio-------------------------------*/
 .footer {
-    background-color: #0e151b;
-    color: #fff;
-    padding: 2rem 1rem;/* Espaçamento interno (topo/baixo*/
-    text-align: center;/* Centraliza o texto */
-    left: 0 !important;
-    right: 0 !important;
+    background-color: #0e151b; /* Cor de fundo do rodapé */
+    color: #fff; /* Texto branco */
+    padding: 2rem 1rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    left: 0 !important; /* Posicionamento à esquerda */
+    right: 0 !important; /* Posicionamento à direita */
 }
 
 /* Estiliza os links dentro do rodapé */
 .footer a {
-    color: #fff;
-    text-decoration: none;
-    /* Remove sublinhado dos links */
-    margin: 0 10px;
-    /* Espaço entre os links */
-    font-weight: bold;
-    /* Deixa o texto dos links em negrito */
+    color: #fff; /* Cor branca para os links */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0 10px; /* Espaço entre os links */
+    font-weight: bold; /* Texto em negrito */
 }
 
 /* Efeito hover nos links do rodapé */
 .footer a:hover {
-    color: #00ff99;
-    /* Cor verde clara ao passar o mouse */
+    color: #00ff99; /* Cor verde ao passar o mouse */
 }
 
 /* Container dos links "Sobre Nós", "Termos de Uso..." */
 .footer-links {
-    font-size: 1rem !important;
-    margin-bottom: 1rem;
-    /* Espaço abaixo para separar dos ícones sociais */
+    font-size: 1rem !important; /* Tamanho da fonte */
+    margin-bottom: 1rem; /* Espaço abaixo */
 }
 
 /* Estiliza os ícones sociais (Facebook, Twitter...) */
 .footer-social a {
-    color: #fff;
-    font-size: 1.2rem;
-    /* Tamanho dos ícones */
-    margin: 0 10px;
-    /* Espaçamento horizontal entre os ícones */
-    display: inline-block;
-    /* Garante que fiquem lado a lado */
+    color: #fff; /* Ícones brancos */
+    font-size: 1.2rem; /* Tamanho dos ícones */
+    margin: 0 10px; /* Espaço entre ícones */
+    display: inline-block; /* Exibe os ícones lado a lado */
 }
 
 /* Efeito hover nos ícones sociais */
 .footer-social a:hover {
-    color: #00ff99;
+    color: #00ff99; /* Cor verde ao passar o mouse */
 }
 
 /* Texto © 2025 Tecnet. Todos os direitos reservados. */
 .footer-copy {
-    margin-top: 1rem;
-    /* Espaço acima do texto final */
-    font-size: 0.8rem !important;
-    /* Tamanho um pouco menor */
-    color: #ccc;
-    /* Cinza claro para suavizar a aparência */
+    margin-top: 1rem; /* Espaço acima do texto */
+    font-size: 0.8rem !important; /* Tamanho menor */
+    color: #ccc; /* Cor cinza clara */
 }
 
-/*---------------------------rodapé final----------------------------*/
+
 
 /* ================= RESPONSIVIDADE ================= */
 @media (min-width: 200px) and (max-width: 1024px) {
     .nav-link {
-        margin: 0.5rem 0 !important;
-        font-size: 1.9em !important;
+        margin: 0.5rem 0 !important; /* Espaço vertical entre links */
+        font-size: 1.9em !important; /* Aumenta tamanho da fonte */
     }
     .container-fluid {
-        font-size: 0.5em !important;
-        padding: 0 !important;
-        margin-left: 1em !important;
+        font-size: 0.5em !important; /* Reduz o tamanho do conteúdo */
+        padding: 0 !important; /* Remove preenchimento */
+        margin-left: 1em !important; /* Margem à esquerda */
     }
 
     .input-group {
-        width: 60% !important;
+        width: 60% !important; /* Largura reduzida para o grupo de busca */
     }
     .form-control{
-        border: none !important;
+        border: none !important; /* Remove borda no campo */
     }
 
     #search-btn{
-        padding-top: 1em !important;
+        padding-top: 1em !important; /* Aumenta o espaçamento superior */
     }
 
     .btn-search i{
-        background-color: white !important;
-        font-size: medium !important;
-        width: 1em !important;
-        height: 1.9em !important;
-        
+        background-color: white !important; /* Fundo branco do ícone */
+        font-size: medium !important; /* Tamanho da fonte */
+        width: 1em !important; /* Largura do ícone */
+        height: 1.9em !important; /* Altura do ícone */
     }
 
     .navbar-toggler {
-        margin-left: auto !important;
-        border-color: var(--textcolor);
+        margin-left: auto !important; /* Posiciona à direita */
+        border-color: var(--textcolor); /* Cor da borda do botão */
     }
     .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    } /* Ícone customizado para o botão */
+    
 
     .footer-links,
     .footer-social {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 0 !important; /* Remove padding à esquerda */
+        padding-right: 0 !important; /* Remove padding à direita */
     }
 }
-

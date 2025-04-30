@@ -2,57 +2,55 @@
 @import url(base.css);
 
 .noticia {
-    text-align: center !important;
-    padding: 4em !important;
-
+    text-align: center !important; /* Centraliza o conteúdo */
+    padding: 4em !important; /* Espaçamento interno grande */
 }
 
 .h1 {
-    text-align: center !important;
-    padding: 1em !important;
-    margin-left: 20% !important;
-    margin-right: 20% !important;
-
+    text-align: center !important; /* Centraliza o título */
+    padding: 1em !important; /* Espaço interno */
+    margin-left: 20% !important; /* Margem esquerda para centralização */
+    margin-right: 20% !important; /* Margem direita para centralização */
 }
 
-.notociap, text-justified {
-    text-align: center !important;
-    padding: 1em !important;
-    margin-left: 20% !important;
-    margin-right: 20% !important;
+.notociap, .text-justified {
+    text-align: center !important; /* Centraliza o texto */
+    padding: 1em !important; /* Espaço interno */
+    margin-left: 20% !important; /* Margem esquerda */
+    margin-right: 20% !important; /* Margem direita */
 }
 
 main{
-    padding-bottom: 14em !important;
+    padding-bottom: 14em !important; /* Espaço inferior extra para o conteúdo */
 }
 
+/* ==================== RESPONSIVIDADE ==================== */
 @media (min-width: 200px) and (max-width: 1024px)  {
     .noticia {
-        padding: 2em !important;
+        padding: 2em !important; /* Reduz o espaçamento em telas menores */
     }
 
     .h1 {
-        margin-left: 5% !important;
+        margin-left: 5% !important; /* Reduz margem lateral */
         margin-right: 5% !important;
-        padding: 0.8em !important;
-        font-size: 1.5em !important;
+        padding: 0.8em !important; /* Menor espaçamento interno */
+        font-size: 1.5em !important; /* Fonte ajustada para dispositivos menores */
     }
 
     .img-noticia{
-        width: 59% !important;
-        height: 125px !important;
-
+        width: 59% !important; /* Ajusta largura da imagem */
+        height: 125px !important; /* Altura fixa da imagem */
     }
 
     .noticiap, .text-justified {
-        margin-left: 5% !important;
+        margin-left: 5% !important; /* Menor margem para melhor adaptação */
         margin-right: 5% !important;
-        padding: 0.8em !important;
-        font-size: 1em !important;
-        text-align: justify !important;
+        padding: 0.8em !important; /* Menor espaçamento */
+        font-size: 1em !important; /* Tamanho da fonte padrão */
+        text-align: justify !important; /* Justifica o texto */
     }
 
     main {
-        padding-bottom: 8em !important;
+        padding-bottom: 8em !important; /* Reduz o espaço inferior */
     }
 }
